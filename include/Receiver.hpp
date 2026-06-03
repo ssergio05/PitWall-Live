@@ -31,7 +31,7 @@ private:
     std::condition_variable m_cv;
     std::thread m_workerThread;
 
-    TelemetryLogger m_logger{ "C:/Users/Sergio/Dropbox/Mi PC (DESKTOP-HGNK1S8)/Desktop/Sim-Racing Real-Time Telemetry Link/session_telemetry.csv" };
+    TelemetryLogger m_logger{ "session_telemetry.csv" };
 
     uint32_t m_nextExpectedFrame = 0;
     uint32_t m_packetsLost = 0;

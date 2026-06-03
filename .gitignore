@@ -20,3 +20,6 @@ venv/
 # Datos generados (¡Muy importante no subir esto!)
 session_telemetry.csv
 *.csv
+
+#Cache Fastf1
+fastf1:cache/

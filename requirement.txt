@@ -2,4 +2,7 @@
 pandas>=2.0.0
 
 # Data visualization and live animation
-matplotlib>=3.7.0
+matplotlib>=3.7.
+
+#FastF1
+fastf1>=3.3.0
