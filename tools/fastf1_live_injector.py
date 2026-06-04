@@ -4,7 +4,16 @@ import pandas as pd
 import os
 import logging
 
-fastf1.Cache.enable_cache('fastf1_cache')
+# 1. Configurar caché de forma robusta
+# Calculamos la ruta a la carpeta principal (un nivel por encima de 'tools')
+script_dir = os.path.dirname(os.path.abspath(__file__))
+cache_dir = os.path.join(script_dir, '..', 'fastf1_cache')
+
+# Si la carpeta no existe, le decimos a Python que la cree
+if not os.path.exists(cache_dir):
+    os.makedirs(cache_dir)
+
+fastf1.Cache.enable_cache(cache_dir)
 fastf1.logger.set_log_level(logging.ERROR)
 
 print("📡 Descargando datos de la FIA (Bahrein 2024 - Q)...")

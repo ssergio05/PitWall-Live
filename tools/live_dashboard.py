@@ -49,7 +49,7 @@ def update_graph(frame):
 
         # --- PANEL 2: RPM and Gear ---
         ax2.plot(df['LapTime'], df['RPM'], color='#ffa500', linewidth=1.5)
-        ax2.set_ylim(8000, 12500)
+        ax2.set_ylim(6000, 12500)
         ax2.set_ylabel("RPM", color='#ffa500', fontsize=10, fontweight='bold')
         
         ax2_gear.step(df['LapTime'], df['Gear'], color='white', linestyle='--', linewidth=1.5)
